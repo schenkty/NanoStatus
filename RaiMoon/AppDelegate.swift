@@ -49,7 +49,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         fetchPrice()
         
-        Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(fetchPrice), userInfo: nil, repeats: true)
+        // Pull every 5 mins. Data Source only updates every 5 mins
+        Timer.scheduledTimer(timeInterval: 300, target: self, selector: #selector(fetchPrice), userInfo: nil, repeats: true)
     }
 
     @objc func fetchPrice() {
@@ -61,14 +62,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     if let dictionaryArray = data as? Array<Dictionary<String, AnyObject?>> {
                         let usd = dictionaryArray[0]["price_usd"] as? String
                         
-                        self.item?.title = "XRB $\(usd ?? "???")"
+                        self.item?.title = "XRB: $\(usd ?? "???")"
                         
                         self.btc?.title = "\(dictionaryArray[0]["price_btc"] as? String ?? "???") BTC"
-                        self.percentChange1h?.title = "1h    \(dictionaryArray[0]["percent_change_1h"] as? String ?? "???")%"
-                        self.percentChange24h?.title = "24h \(dictionaryArray[0]["percent_change_24h"] as? String ?? "???")%"
-                        self.percentChange7d?.title = "7d    \(dictionaryArray[0]["percent_change_7d"] as? String ?? "???")%"
-                        self.marketCap?.title = "Market Cap $\(dictionaryArray[0]["market_cap_usd"] as? String ?? "???")"
-                        self.rank?.title = "Rank            \(dictionaryArray[0]["rank"] as? String ?? "???")"
+                        self.percentChange1h?.title = "1h: \(dictionaryArray[0]["percent_change_1h"] as? String ?? "???")%"
+                        self.percentChange24h?.title = "24h: \(dictionaryArray[0]["percent_change_24h"] as? String ?? "???")%"
+                        self.percentChange7d?.title = "7d: \(dictionaryArray[0]["percent_change_7d"] as? String ?? "???")%"
+                        self.marketCap?.title = "Market Cap: $\(dictionaryArray[0]["market_cap_usd"] as? String ?? "???")"
+                        self.rank?.title = "Rank: \(dictionaryArray[0]["rank"] as? String ?? "???")"
                     }
                 }
             } else {
