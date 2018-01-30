@@ -44,6 +44,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(marketCap!)
         menu.addItem(rank!)
         menu.addItem(NSMenuItem.separator())
+        menu.addItem(NSMenuItem(title: "Refresh Data", action: #selector(fetchPrice), keyEquivalent: ""))
+        menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(AppDelegate.quit), keyEquivalent: ""))
         item?.menu = menu
         
