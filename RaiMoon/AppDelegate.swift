@@ -64,7 +64,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     if let dictionaryArray = data as? Array<Dictionary<String, AnyObject?>> {
                         let usd = dictionaryArray[0]["price_usd"] as? String
                         
-                        self.item?.title = "XRB: $\(usd ?? "???")"
+                        self.item?.title = "NANO: $\(usd ?? "???")"
                         
                         self.btc?.title = "\(dictionaryArray[0]["price_btc"] as? String ?? "???") BTC"
                         self.percentChange1h?.title = "1h: \(dictionaryArray[0]["percent_change_1h"] as? String ?? "???")%"
