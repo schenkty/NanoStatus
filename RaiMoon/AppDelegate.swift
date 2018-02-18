@@ -58,7 +58,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func fetchPrice() {
         print("Fetching price...")
         
-        Alamofire.request("https://api.coinmarketcap.com/v1/ticker/raiblocks/").responseJSON { response in
+        Alamofire.request("https://api.coinmarketcap.com/v1/ticker/nano/").responseJSON { response in
             if let data = response.result.value {
                 if  (data as? [[String : AnyObject]]) != nil {
                     if let dictionaryArray = data as? Array<Dictionary<String, AnyObject?>> {
