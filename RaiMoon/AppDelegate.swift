@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RaiMoon
 //
-//  Created by Danny Tatom on 12/28/17.
-//  Copyright © 2017 Danny Tatom. All rights reserved.
+//  Created by Ty Schenk on 12/28/17.
+//  Copyright © 2017 Ty Schenk. All rights reserved.
 //
 
 import Cocoa

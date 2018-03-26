@@ -28,12 +28,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		304F00311FF6030100A51ED2 /* RaiMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304F00311FF6030100A51ED2 /* NanoStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		304F00341FF6030100A51ED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		304F00381FF6030100A51ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		304F003B1FF6030100A51ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		304F003D1FF6030100A51ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		304F003E1FF6030100A51ED2 /* RaiMoon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RaiMoon.entitlements; sourceTree = "<group>"; };
+		329AA3FC206980D8008FC840 /* NanoStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NanoStatus.entitlements; sourceTree = "<group>"; };
 		32BA0DAF2014651C0079DFC8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		93B68CFE8832533F46D1CE33 /* Pods-RaiMoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaiMoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaiMoon/Pods-RaiMoon.release.xcconfig"; sourceTree = "<group>"; };
 		A61ACE72E921A4DAF87C5030 /* Pods_RaiMoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaiMoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +65,7 @@
 		304F00281FF6030100A51ED2 = {
 			isa = PBXGroup;
 			children = (
+				329AA3FC206980D8008FC840 /* NanoStatus.entitlements */,
 				304F00331FF6030100A51ED2 /* RaiMoon */,
 				304F00321FF6030100A51ED2 /* Products */,
 				1BBF47BF32CB69DB02E1E560 /* Pods */,
@@ -74,7 +76,7 @@
 		304F00321FF6030100A51ED2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				304F00311FF6030100A51ED2 /* RaiMoon.app */,
+				304F00311FF6030100A51ED2 /* NanoStatus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		304F00301FF6030100A51ED2 /* RaiMoon */ = {
+		304F00301FF6030100A51ED2 /* NanoStatus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 304F00411FF6030100A51ED2 /* Build configuration list for PBXNativeTarget "RaiMoon" */;
+			buildConfigurationList = 304F00411FF6030100A51ED2 /* Build configuration list for PBXNativeTarget "NanoStatus" */;
 			buildPhases = (
 				743F572DADC38289C9F87B1A /* [CP] Check Pods Manifest.lock */,
 				304F002D1FF6030100A51ED2 /* Sources */,
@@ -119,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = RaiMoon;
+			name = NanoStatus;
 			productName = RaiMoon;
-			productReference = 304F00311FF6030100A51ED2 /* RaiMoon.app */;
+			productReference = 304F00311FF6030100A51ED2 /* NanoStatus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +134,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Daniel Tatom";
+				ORGANIZATIONNAME = "Ty Schenk";
 				TargetAttributes = {
 					304F00301FF6030100A51ED2 = {
 						CreatedOnToolsVersion = 9.2;
@@ -140,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 304F002C1FF6030100A51ED2 /* Build configuration list for PBXProject "RaiMoon" */;
+			buildConfigurationList = 304F002C1FF6030100A51ED2 /* Build configuration list for PBXProject "NanoStatus" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				304F00301FF6030100A51ED2 /* RaiMoon */,
+				304F00301FF6030100A51ED2 /* NanoStatus */,
 			);
 		};
 /* End PBXProject section */
@@ -359,7 +361,7 @@
 			baseConfigurationReference = B67F235E50E0E683D855CF85 /* Pods-RaiMoon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RaiMoon/RaiMoon.entitlements;
+				CODE_SIGN_ENTITLEMENTS = NanoStatus.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -370,7 +372,8 @@
 				);
 				INFOPLIST_FILE = RaiMoon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tschenk.RaiMoon;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tschenk.nanostatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -382,7 +385,7 @@
 			baseConfigurationReference = 93B68CFE8832533F46D1CE33 /* Pods-RaiMoon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RaiMoon/RaiMoon.entitlements;
+				CODE_SIGN_ENTITLEMENTS = NanoStatus.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -393,7 +396,8 @@
 				);
 				INFOPLIST_FILE = RaiMoon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tschenk.RaiMoon;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tschenk.nanostatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -403,7 +407,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		304F002C1FF6030100A51ED2 /* Build configuration list for PBXProject "RaiMoon" */ = {
+		304F002C1FF6030100A51ED2 /* Build configuration list for PBXProject "NanoStatus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				304F003F1FF6030100A51ED2 /* Debug */,
@@ -412,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		304F00411FF6030100A51ED2 /* Build configuration list for PBXNativeTarget "RaiMoon" */ = {
+		304F00411FF6030100A51ED2 /* Build configuration list for PBXNativeTarget "NanoStatus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				304F00421FF6030100A51ED2 /* Debug */,
